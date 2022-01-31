@@ -4,7 +4,7 @@ const fs = require('fs');
 const solc = require('solc');
 
 const inboxPath = path.resolve(__dirname, 'contracts', 'Inbox.sol'); //dessa forma deixa mais inter
-///interoperacioanal
+///interoperacional
 
 const source = fs.readFileSync(inboxPath, 'utf8'); //le o conteudo do arquivo no endereço inboxPath
 
