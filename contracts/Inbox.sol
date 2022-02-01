@@ -3,7 +3,7 @@ pragma solidity ^0.4.17;
 
 // contract code will go here
 contract Inbox {
-    string public message;
+    string public message = "my first hello!";
 
     function InboxInitial(string initialMessage) public {
         message = initialMessage;
@@ -11,5 +11,9 @@ contract Inbox {
 
     function setMessage(string newMessage) public {
         message = newMessage;
+    }
+
+    function getMessage() public returns (string) {
+        return message;
     }
 }
